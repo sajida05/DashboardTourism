@@ -2,9 +2,8 @@ import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
 
 const LanguageToggle = () => {
-  const { t } = useTranslation();  // Only use `t` if needed, otherwise can remove
+  const { i18n } = useTranslation();  // Only getting i18n since t isn't used
 
-  // Function to switch language
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };

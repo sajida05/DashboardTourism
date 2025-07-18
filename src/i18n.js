@@ -6,7 +6,6 @@ const resources = {
   en: {
     translation: {
       lineChartTitle: "Tourism Growth Over Time",
-      barChartTitle: "Top Destinations in",
       selectCountry: "Select Country",
       selectYear: "Select Year",
       touristArrivals: "Tourist Arrivals",
@@ -38,7 +37,6 @@ const resources = {
       topDestinations: "Top 5 des destinations touristiques",
       language: "Langue",
       tourismChartDescription: "Visualisation des arrivées de touristes internationaux par pays sélectionné de 2000 à 2020.",
-      barChartTitle: "Top des destinations en",
       barChartDescription: "Visualisation des principales destinations touristiques pour l'année sélectionnée selon les arrivées internationales.",
 
 
