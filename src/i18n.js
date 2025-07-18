@@ -39,7 +39,7 @@ const resources = {
       language: "Langue",
       tourismChartDescription: "Visualisation des arrivées de touristes internationaux par pays sélectionné de 2000 à 2020.",
       barChartTitle: "Top des destinations en",
-        barChartDescription: "Visualisation des principales destinations touristiques pour l'année sélectionnée selon les arrivées internationales.",
+      barChartDescription: "Visualisation des principales destinations touristiques pour l'année sélectionnée selon les arrivées internationales.",
 
 
       countries: {
