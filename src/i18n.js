@@ -15,7 +15,7 @@ const resources = {
       barChartTitle: "Top Destinations in",
       barChartDescription: "Visualizing top tourist destinations for the selected year based on international arrivals.",
       dashboardTitle: "Global Tourism Dashboard",
-      footerThing: "Data sourced from international tourism reports.",
+      footerThing: "Simulated data inspired by global tourism trends.",
 
       countries: {
         France: 'France',
@@ -39,7 +39,7 @@ const resources = {
       tourismChartDescription: "Visualisation des arrivées de touristes internationaux par pays sélectionné de 2000 à 2020.",
       barChartDescription: "Visualisation des principales destinations touristiques pour l'année sélectionnée selon les arrivées internationales.",
       dashboardTitle: "Tableau interactif du tourisme mondial",
-      footerThing: "Données provenant de rapports internationaux sur le tourisme.",
+      footerThing: "Données simulées inspirées des tendances mondiales du tourisme.",
 
       countries: {
         France: 'France',
