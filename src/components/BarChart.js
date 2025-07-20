@@ -32,7 +32,7 @@ const { t, i18n } = useTranslation();
             tick={{ fontSize: 12 }}
           />
          <YAxis 
-         tickFormatter={(value) => formatNumber(value, i18n.language)} 
+tickFormatter={(value) => `${(value / 1_000_000).toFixed(0)}M`}
           tick={{ fontSize: 12 }}
          label={{ value: t('touristArrivals'), angle: -90, position: 'insideLeft', fontSize: 12 }}
         />

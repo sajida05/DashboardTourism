@@ -17,7 +17,7 @@ const { t, i18n } = useTranslation();
         <CartesianGrid stroke="#e0e0e0" strokeDasharray="3 3" />
         <XAxis dataKey="year" tick={{ fontSize: 12 }} />
       <YAxis 
-    tickFormatter={(value) => formatNumber(value, i18n.language)}
+    tickFormatter={(value) => `${(value / 1_000_000).toFixed(0)}M`}
     label={{ value: t('touristArrivals'), angle: -90, position: 'insideLeft', fontSize: 12 }}
     tick={{ fontSize: 12 }}
     />
