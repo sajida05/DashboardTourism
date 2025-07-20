@@ -3,7 +3,12 @@ import { tourismData } from '../tourismdata';
 import { useTranslation } from 'react-i18next';
 
 const BarChart = ({ selectedYear }) => {
-  const { t } = useTranslation();
+const { t, i18n } = useTranslation();
+
+  const formatNumber = (value, language) => {
+  return value.toLocaleString(language === 'fr' ? 'fr-FR' : 'en-US');
+};
+
 
   // Find data for selectedYear
   const yearData = tourismData.find(item => item.year === parseInt(selectedYear));
@@ -26,15 +31,17 @@ const BarChart = ({ selectedYear }) => {
             tickFormatter={(country) => t(`countries.${country}`, country)}
             tick={{ fontSize: 12 }}
           />
-          <YAxis 
-            tickFormatter={(value) => `${(value / 1_000_000).toFixed(0)}M`} 
-            tick={{ fontSize: 12 }}
-            label={{ value: t('touristArrivals'), angle: -90, position: 'insideLeft', fontSize: 12 }}
-          />
+         <YAxis 
+         tickFormatter={(value) => formatNumber(value, i18n.language)} 
+          tick={{ fontSize: 12 }}
+         label={{ value: t('touristArrivals'), angle: -90, position: 'insideLeft', fontSize: 12 }}
+        />
+
           <Tooltip 
-            formatter={(value) => `${value.toLocaleString()}`} 
-            labelFormatter={(label) => t(`countries.${label}`, label)} 
+           formatter={(value) => formatNumber(value, i18n.language)} 
+         labelFormatter={(label) => t(`countries.${label}`, label)} 
           />
+
           <Legend />
           <Bar dataKey="tourists" fill="#20c997" />
         </RechartsBarChart>

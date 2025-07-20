@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="container mt-5">
       <LanguageToggle />
-      <h1 className="text-center fw-bold" style={{ marginBottom: '75px' }}>Global Tourism Dashboard</h1>
+      <h1 className="text-center fw-bold" style={{ marginBottom: '75px' }}> {t('dashboardTitle')}</h1>
 
       {/* Line Chart Section */}
       <div className="text-center mb-5 ">
@@ -76,7 +76,7 @@ function App() {
   <BarChart selectedYear={selectedYear} />
 </div>
 <p className="text-center text-muted mt-5">
-  Data sourced from international tourism reports.
+  {t('footerThing')}
 </p>
 
     </div>
